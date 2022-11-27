@@ -40,10 +40,12 @@ const SearchResponsive = ({ p = Function }) => {
     if (e.key === "Enter") {
       if (ctx?.searchValue) {
         router.push(`/searchPage?search_query=${ctx?.searchValue}`);
-        //ctx?.handleDisplaySearch?.(false);
         ctx?.handleIsSearch?.(true);
         setHistorySearch((prev) => [...prev, ctx.searchValue!]);
         ctx?.handleAddDataSearch?.(ctx?.searchValue!);
+        if (ctx?.searchValue === router.query.search_query) {
+          ctx?.handleDisplaySearch?.(false);
+        }
       }
     }
   };
