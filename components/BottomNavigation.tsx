@@ -7,7 +7,7 @@ import { ImFilePlay } from "react-icons/im";
 const BottomNavigation = () => {
   return (
     <nav className="fixed z-30 bottom-0 w-full space-x-7 px-8 justify-center bg-[#222222] flex items-center py-1 scale-0 md:scale-100">
-      <Link className="flex flex-col items-center" href="/">
+      <Link className="flex flex-col items-end" href="/">
         <AiFillHome className="fill-white text-[1.35rem] mb-0.5" />{" "}
         <span className="text-white text-[10.3px]">Beranda</span>
       </Link>
