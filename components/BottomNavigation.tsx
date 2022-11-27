@@ -12,7 +12,7 @@ const BottomNavigation = () => {
         <span className="text-white text-[10.3px]">Beranda</span>
       </Link>
       <Link className="flex flex-col items-center space-y-1" href="/">
-        <SiBbciplayer className="fill-white text-[1.2rem] mt-1" />{" "}
+        <SiBbciplayer className="fill-white text-[1.2rem] mb-1" />{" "}
         <span className="text-white text-[10.3px]">Shorts</span>
       </Link>
       <Link className="" href="/">
