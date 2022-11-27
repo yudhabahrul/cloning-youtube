@@ -42,7 +42,7 @@ const SearchResponsive = ({ p = Function }) => {
         router.push(`/searchPage?search_query=${ctx?.searchValue}`);
         //ctx?.handleDisplaySearch?.(false);
         ctx?.handleIsSearch?.(true);
-        setHistorySearch((prev) => [...prev, e.currentTarget.value]);
+        setHistorySearch((prev) => [...prev, ctx.searchValue!]);
         ctx?.handleAddDataSearch?.(ctx?.searchValue!);
       }
     }
