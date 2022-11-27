@@ -122,19 +122,19 @@ const Header = ({ sidebarIsActive, className }: MixType) => {
           <MdMic className="fill-slate-100 text-[1.4rem]" />
         </div>
       </div>
-      <ul className="fixed right-0 md:right-2 flex items-center space-x-7 md:space-x-4 mr-8 md:mr-0">
+      <ul className="fixed right-0 md:right-2 flex items-center space-x-7 md:space-x-5 mr-8 md:mr-2">
         <li>
-          <VscDeviceCameraVideo className="fill-slate-100 text-[1.7rem] md:text-2xl cursor-pointer md:-mr-4" />
+          <VscDeviceCameraVideo className="fill-slate-100 text-[1.7rem] md:text[1.6rem] cursor-pointer md:-mr-4" />
         </li>
         <li>
           <BsGrid3X3Gap className="md:hidden fill-white text-xl cursor-pointer" />
         </li>
         <li>
-          <BsBell className="fill-white text-[1.1rem] cursor-pointer" />
+          <BsBell className="fill-white text-[1.1rem] md:text-xl cursor-pointer" />
         </li>
         <li className="hidden md:block">
           <AiOutlineSearch
-            className="fill-slate-200 text-[1.3rem] cursor-pointer"
+            className="fill-slate-200 text-[1.4rem] cursor-pointer"
             onClick={() => ctx?.handleDisplaySearch?.(true)}
           />
         </li>
