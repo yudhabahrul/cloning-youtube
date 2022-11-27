@@ -11,7 +11,7 @@ const BottomNavigation = () => {
         <AiFillHome className="fill-white text-[1.35rem] mb-0.5" />{" "}
         <span className="text-white text-[10.3px]">Beranda</span>
       </Link>
-      <Link className="flex flex-col items-center space-y-1" href="/">
+      <Link className="flex flex-col items-center" href="/">
         <SiBbciplayer className="fill-white text-[1.2rem] mb-1" />{" "}
         <span className="text-white text-[10.3px]">Shorts</span>
       </Link>
