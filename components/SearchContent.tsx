@@ -33,15 +33,25 @@ const SearchContent = ({ sidebarIsActive }: MixType) => {
           : "left-[4.5rem] w-[calc(100%_-_4.5rem)] pl-[5.525rem]"
       } p-6 pr-16 bg-[#181818] top-[7.2rem] md:top-[3rem] md:left-0 md:w-full md:p-0 md:pb-16`}
     >
-      {filterData.map((val) => (
-        <div key={val.id}>
-          {windowSize < 767 ? (
-            <ListVideo data={val} sidebarIsActive={sidebarIsActive} />
-          ) : (
-            <SearchListVideo data={val} sidebarIsActive={sidebarIsActive} />
-          )}
-        </div>
-      ))}
+      {filterData.length > 0
+        ? filterData.map((val) => (
+            <div key={val.id}>
+              {windowSize < 767 ? (
+                <ListVideo data={val} sidebarIsActive={sidebarIsActive} />
+              ) : (
+                <SearchListVideo data={val} sidebarIsActive={sidebarIsActive} />
+              )}
+            </div>
+          ))
+        : data.video.map((val) => (
+            <div key={val.id}>
+              {windowSize < 767 ? (
+                <ListVideo data={val} sidebarIsActive={sidebarIsActive} />
+              ) : (
+                <SearchListVideo data={val} sidebarIsActive={sidebarIsActive} />
+              )}
+            </div>
+          ))}
     </div>
   );
 };
