@@ -97,7 +97,7 @@ const LeftWatchVideo = ({ idVideo }: { idVideo: number }) => {
           {dVideo?.view}
           <span className="relative top-[-0.2rem] text-2xl">.</span> 14 Agu 2022
         </p>
-        <ul className="scroll-item flex items-center space-x-7 md:space-x-6 ml-7 md:ml-0 mt-2 md:mt-5 xs:mt-1 md:overflow-y-scroll md:w-full">
+        <ul className="scroll-item flex items-center space-x-7 ml-7 md:ml-0.5 mt-2 md:mt-5 xs:mt-1 md:overflow-y-scroll md:w-full">
           <li className="flex md:flex-col items-center space-x-2 md:space-x-0 md:space-y-1.5 cursor-pointer">
             <AiOutlineLike className="fill-slate-50 text-[1.2rem]" />{" "}
             <span className="text-white font-medium text-sm md:text-xs">6</span>
@@ -251,7 +251,7 @@ const LeftWatchVideo = ({ idVideo }: { idVideo: number }) => {
               alt=""
             />
           </div>
-          <p className="absolute left-[3.75rem] text-slate-200 text-xs font-medium mt-0.5">
+          <p className="absolute left-[3.75rem] text-slate-200 text-xs font-medium mt-0.5 mr-2">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
             qui accusamus vitae vero, quo praesentium!
           </p>
