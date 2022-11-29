@@ -75,7 +75,7 @@ const Header = ({ sidebarIsActive, className }: MixType) => {
         sidebarIsActive
           ? "w-[calc(100%_-_15rem)] left-60"
           : "w-[calc(100%_-_4.5rem)] left-[4.5rem]"
-      } justify-between items-center h-[3.6rem] md:h-10 z-20 top-0 w-full bg-[#222222] ${className}  border-b-gray-700/80 md:border-0 md:border-b-0 md:w-full md:left-0`}
+      } justify-between items-center h-[3.6rem] md:h-11 z-20 top-0 w-full bg-[#222222] ${className}  border-b-gray-700/80 md:border-0 md:border-b-0 md:w-full md:left-0`}
     >
       <div
         className={`fixed top-0 left-0 bg-[#222222] ${

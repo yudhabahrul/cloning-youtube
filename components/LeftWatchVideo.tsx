@@ -85,11 +85,11 @@ const LeftWatchVideo = ({ idVideo }: { idVideo: number }) => {
         height={740}
         controls
         ref={videoRef}
-        className="outline-none md:w-full object-fill md:h-52 md:fixed md:top-0 md:left-0 z-30"
+        className="outline-none md:w-full object-fill sm_2:h-52 md:h-56 md:fixed md:top-0 md:left-0 z-30"
       >
         <source src="videos/video.mp4" />
       </video>
-      <h1 className="text-slate-100 text-lg md:text-sm font-medium mt-4 md:mt-[13.5rem] md:ml-4 md:mr-3">
+      <h1 className="text-slate-100 text-lg md:text-sm font-medium mt-4 sm_2:mt-[13.5rem] md:mt-[14.5rem] md:ml-4 md:mr-3">
         {dVideo?.title}
       </h1>
       <div className="relative flex md:flex-col items-center md:items-start -mt-0.5 md:-mt-2.5 md:pl-4">

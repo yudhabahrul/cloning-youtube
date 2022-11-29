@@ -38,7 +38,9 @@ const ListVideo = ({ data, sidebarIsActive }: MixType) => {
         }`}
       >
         <div
-          className={`relative ${sidebarIsActive ? "h-36" : "h-40"} md:h-44`}
+          className={`relative ${
+            sidebarIsActive ? "h-36" : "h-40"
+          } sm_2:h-44 md:h-52`}
         >
           <Image
             src={data?.image as StaticImageData}
@@ -46,7 +48,7 @@ const ListVideo = ({ data, sidebarIsActive }: MixType) => {
             layout="fill"
             className="object-cover"
           />
-          <div className="absolute right-1 bottom-[0.2rem] bg-[rgba(0,0,0,0.84)]  p[0.8px] px-1 text-[0.6rem] font-semibold text-white">
+          <div className="absolute right-1 bottom-[0.2rem] bg-[rgba(0,0,0,0.84)]  p-[1.5px] px-1 text-[0.7rem] font-semibold text-white">
             {data?.time}
           </div>
         </div>
@@ -59,10 +61,10 @@ const ListVideo = ({ data, sidebarIsActive }: MixType) => {
           />
         </div>
         <div className="mt-[0.75rem]">
-          <div className="relative ml-12 md:ml-[3.75rem] mt-[-3.15rem] text-slate-100 text-[0.9rem] md:text-[0.72rem] font-semibold pr-4 md:pr-9">
+          <div className="relative ml-12 md:ml-[3.75rem] mt-[-3.15rem] text-slate-100 text-[0.9rem] sm_2:text-[0.72rem] md:text-[0.825rem] font-semibold pr-4 md:pr-9">
             <p className="">{titleLine1} </p>
             <p className="truncate">{titleLine2}</p>
-            <div className="mt-[0.3rem] text-gray-400 text-[0.72rem]">
+            <div className="mt-[0.3rem] md:mt-[0.2rem] text-gray-400 text-[0.72rem]">
               <div className="flex items-center space-x-1.5">
                 <span>{data?.channel}</span>
                 {data?.verified && (

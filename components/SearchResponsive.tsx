@@ -77,7 +77,7 @@ const SearchResponsive = ({ p = Function }) => {
           onKeyDown={handleOnKeyDown}
           className={`bg-gray-700 ${
             windowSize <= 412 ? "w-3/4" : windowSize > 413 ? "w-[77.5%]" : ""
-          } h-7 border-0 outline-0 text-sm lowercase ml-3 text-white caret-[#ff0000]  pl-2 pb-1`}
+          } h-7 border-0 outline-0 text-sm lowercase ml-3 text-white caret-[#ff0000]  pl-2`}
         />
         <div className="absolute z-10 right-2.5 cursor-pointer w-[1.8rem] h-[1.8rem] bg-gray-600/40 rounded-full flex justify-center items-center">
           <MdMic className="fill-slate-100 text-xl" />
